@@ -12,14 +12,14 @@ services:
     env_file:
       - ./.env
 
-  repeat-database:
-    platform: linux/x86_64
-    image: mysql:latest
-    environment:
-      MYSQL_DATABASE: 'repeat-nest'
-      MYSQL_ROOT_PASSWORD: 'root'
-    ports:
-      - 3306:3306
+  # repeat-database:
+  #   platform: linux/x86_64
+  #   image: mysql:latest
+  #   environment:
+  #     MYSQL_DATABASE: 'repeat-nest'
+  #     MYSQL_ROOT_PASSWORD: 'root'
+  #   ports:
+  #     - 3306:3306
 
   # repeat-redis:
   #   image: redis:latest
